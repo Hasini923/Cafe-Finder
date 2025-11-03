@@ -3,3 +3,5 @@ geopy==2.4.1
 geocoder==1.38.1
 folium==0.20.0
 requests==2.32.5
+streamlit-folium==0.12.0
+
