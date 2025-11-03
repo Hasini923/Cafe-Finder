@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f29a43a30a7f846bcca43e95b8cc029e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f29a43a30a7f846bcca43e95b8cc029e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f29a43a30a7f846bcca43e95b8cc029e = L.map(
+                "map_f29a43a30a7f846bcca43e95b8cc029e",
+                {
+                    center: [13.0878, 80.2785],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00348120c104d65bf52ad2dca4dc4fe1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_00348120c104d65bf52ad2dca4dc4fe1.addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var marker_780b3b17f60ea44dab0396793c4a38c9 = L.marker(
+                [13.0878, 80.2785],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_8fadeee71cf329e9797a0fc3dba8c37d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d61d868586c28d45f512d1bb2e984d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d050ffb6c0bd35992e5963babd5a1641 = $(`<div id="html_d050ffb6c0bd35992e5963babd5a1641" style="width: 100.0%; height: 100.0%;">📍 You are here</div>`)[0];
+                popup_6d61d868586c28d45f512d1bb2e984d2.setContent(html_d050ffb6c0bd35992e5963babd5a1641);
+            
+        
+
+        marker_780b3b17f60ea44dab0396793c4a38c9.bindPopup(popup_6d61d868586c28d45f512d1bb2e984d2)
+        ;
+
+        
+    
+    
+                marker_780b3b17f60ea44dab0396793c4a38c9.setIcon(icon_8fadeee71cf329e9797a0fc3dba8c37d);
+            
+    
+            var marker_676f46f3bf5fe8d7369a4a5245662749 = L.marker(
+                [13.0888215, 80.2812927],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_2fb3dcb1f8307270814c92d73a8967e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aabc093f7a996a3486a765ae7b72e502 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0745328378f062d8238ea951cd3b5ae3 = $(`<div id="html_0745328378f062d8238ea951cd3b5ae3" style="width: 100.0%; height: 100.0%;">☕ Sree Sai Baba Tea Stall (323 m)</div>`)[0];
+                popup_aabc093f7a996a3486a765ae7b72e502.setContent(html_0745328378f062d8238ea951cd3b5ae3);
+            
+        
+
+        marker_676f46f3bf5fe8d7369a4a5245662749.bindPopup(popup_aabc093f7a996a3486a765ae7b72e502)
+        ;
+
+        
+    
+    
+                marker_676f46f3bf5fe8d7369a4a5245662749.setIcon(icon_2fb3dcb1f8307270814c92d73a8967e4);
+            
+    
+            var marker_d90462b3e428217ccf5c518852a36a00 = L.marker(
+                [13.0887735, 80.281508],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_7961c53e57b1d4aaa9204b8220a4151a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_934722e689e81ff7a6fb1d47c249bd29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba6a459cf9a3a38fed4b1bfb45782b47 = $(`<div id="html_ba6a459cf9a3a38fed4b1bfb45782b47" style="width: 100.0%; height: 100.0%;">☕ Lamcy Cafe (343 m)</div>`)[0];
+                popup_934722e689e81ff7a6fb1d47c249bd29.setContent(html_ba6a459cf9a3a38fed4b1bfb45782b47);
+            
+        
+
+        marker_d90462b3e428217ccf5c518852a36a00.bindPopup(popup_934722e689e81ff7a6fb1d47c249bd29)
+        ;
+
+        
+    
+    
+                marker_d90462b3e428217ccf5c518852a36a00.setIcon(icon_7961c53e57b1d4aaa9204b8220a4151a);
+            
+    
+            var marker_d49fec8098af84022f8314efae7f29c6 = L.marker(
+                [13.0848718, 80.2760315],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_4f6b40dc0e3bc91532c4dfd136e7df1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a3af5ee063ad6fd28ede637c532c10b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2cd502d25d5d2e6f6360f488839055c = $(`<div id="html_f2cd502d25d5d2e6f6360f488839055c" style="width: 100.0%; height: 100.0%;">☕ Sri Vinayaga Tea Stall (420 m)</div>`)[0];
+                popup_8a3af5ee063ad6fd28ede637c532c10b.setContent(html_f2cd502d25d5d2e6f6360f488839055c);
+            
+        
+
+        marker_d49fec8098af84022f8314efae7f29c6.bindPopup(popup_8a3af5ee063ad6fd28ede637c532c10b)
+        ;
+
+        
+    
+    
+                marker_d49fec8098af84022f8314efae7f29c6.setIcon(icon_4f6b40dc0e3bc91532c4dfd136e7df1e);
+            
+    
+            var marker_3e61c6d2efa8b58f6e127b17bdbf2182 = L.marker(
+                [13.0904483, 80.2753938],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_4779fd40efba9c6d294166e56eaf93ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aebf3b255c3e36845b3f0f874df6ba9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4f8d9b80ba28de0d5c03a5e95b04e5a = $(`<div id="html_f4f8d9b80ba28de0d5c03a5e95b04e5a" style="width: 100.0%; height: 100.0%;">☕ Krishna Tea Stall (446 m)</div>`)[0];
+                popup_9aebf3b255c3e36845b3f0f874df6ba9.setContent(html_f4f8d9b80ba28de0d5c03a5e95b04e5a);
+            
+        
+
+        marker_3e61c6d2efa8b58f6e127b17bdbf2182.bindPopup(popup_9aebf3b255c3e36845b3f0f874df6ba9)
+        ;
+
+        
+    
+    
+                marker_3e61c6d2efa8b58f6e127b17bdbf2182.setIcon(icon_4779fd40efba9c6d294166e56eaf93ca);
+            
+    
+            var marker_f7ed10c44de0f3a86e7e48fdb6d8749c = L.marker(
+                [13.0836266, 80.2781435],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_68e8d9651785820f11cbac25a1fa9750 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d74f5eb7bdd6c8da105fa09ffbe9a1c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b220574bc5904f5a86c128dfebb969e5 = $(`<div id="html_b220574bc5904f5a86c128dfebb969e5" style="width: 100.0%; height: 100.0%;">☕ Harichandhana Coffee House (463 m)</div>`)[0];
+                popup_d74f5eb7bdd6c8da105fa09ffbe9a1c6.setContent(html_b220574bc5904f5a86c128dfebb969e5);
+            
+        
+
+        marker_f7ed10c44de0f3a86e7e48fdb6d8749c.bindPopup(popup_d74f5eb7bdd6c8da105fa09ffbe9a1c6)
+        ;
+
+        
+    
+    
+                marker_f7ed10c44de0f3a86e7e48fdb6d8749c.setIcon(icon_68e8d9651785820f11cbac25a1fa9750);
+            
+    
+            var marker_a277a68adfd19267e0e511b11b1aba4c = L.marker(
+                [13.0835335, 80.2783025],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_0ed158ea845470a6737b6ad61e7b7453 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78e36819795f188e848a5ff858c02f65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d38f4a108bcb4ff257453be756d77d2 = $(`<div id="html_7d38f4a108bcb4ff257453be756d77d2" style="width: 100.0%; height: 100.0%;">☕ Aburva Tea Stall (472 m)</div>`)[0];
+                popup_78e36819795f188e848a5ff858c02f65.setContent(html_7d38f4a108bcb4ff257453be756d77d2);
+            
+        
+
+        marker_a277a68adfd19267e0e511b11b1aba4c.bindPopup(popup_78e36819795f188e848a5ff858c02f65)
+        ;
+
+        
+    
+    
+                marker_a277a68adfd19267e0e511b11b1aba4c.setIcon(icon_0ed158ea845470a6737b6ad61e7b7453);
+            
+    
+            var marker_2ed48cb7d07eff3a0c9dc4501d2ab857 = L.marker(
+                [13.088514, 80.2832457],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_b9389e754256b89d4693eb04fe6ff105 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d703d3d6774ec3e2f3c844a3936960a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_209a400cf18f7cc08ac4d6f9e51f233f = $(`<div id="html_209a400cf18f7cc08ac4d6f9e51f233f" style="width: 100.0%; height: 100.0%;">☕ Sankar Cafe (520 m)</div>`)[0];
+                popup_9d703d3d6774ec3e2f3c844a3936960a.setContent(html_209a400cf18f7cc08ac4d6f9e51f233f);
+            
+        
+
+        marker_2ed48cb7d07eff3a0c9dc4501d2ab857.bindPopup(popup_9d703d3d6774ec3e2f3c844a3936960a)
+        ;
+
+        
+    
+    
+                marker_2ed48cb7d07eff3a0c9dc4501d2ab857.setIcon(icon_b9389e754256b89d4693eb04fe6ff105);
+            
+    
+            var marker_441325308cf052715bbd6c7d7976d4f5 = L.marker(
+                [13.092844, 80.2793159],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_5e0cfcb1f0284f0c0b16cf2edebc9eb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7a4bbd8b70e21ad4be1a96aba31f9fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_589ecb2942d81e1066f5c12e1c9b0cb1 = $(`<div id="html_589ecb2942d81e1066f5c12e1c9b0cb1" style="width: 100.0%; height: 100.0%;">☕ Lena Tea Stall (564 m)</div>`)[0];
+                popup_f7a4bbd8b70e21ad4be1a96aba31f9fc.setContent(html_589ecb2942d81e1066f5c12e1c9b0cb1);
+            
+        
+
+        marker_441325308cf052715bbd6c7d7976d4f5.bindPopup(popup_f7a4bbd8b70e21ad4be1a96aba31f9fc)
+        ;
+
+        
+    
+    
+                marker_441325308cf052715bbd6c7d7976d4f5.setIcon(icon_5e0cfcb1f0284f0c0b16cf2edebc9eb1);
+            
+    
+            var marker_957588f5f4b6ba80356b78749aea46f6 = L.marker(
+                [13.0927811, 80.2797847],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_fdea02d540e034de6a5d4c708a0c6244 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe5ae1cb321fac1d57c5a2cc42a4a96c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16be2d6fadb83f73bd43e88debdb2cd8 = $(`<div id="html_16be2d6fadb83f73bd43e88debdb2cd8" style="width: 100.0%; height: 100.0%;">☕ Parvathi Filter Coffee and Tea (568 m)</div>`)[0];
+                popup_fe5ae1cb321fac1d57c5a2cc42a4a96c.setContent(html_16be2d6fadb83f73bd43e88debdb2cd8);
+            
+        
+
+        marker_957588f5f4b6ba80356b78749aea46f6.bindPopup(popup_fe5ae1cb321fac1d57c5a2cc42a4a96c)
+        ;
+
+        
+    
+    
+                marker_957588f5f4b6ba80356b78749aea46f6.setIcon(icon_fdea02d540e034de6a5d4c708a0c6244);
+            
+    
+            var marker_ab1108fad0eec2302a66fe73a91f55b4 = L.marker(
+                [13.0924747, 80.2807416],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_b16590908dfdebbc0acf851f141f12c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49ca4b273a437c85b59a527bafc4cb9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94837180233980fb946dac6b5cf79ac5 = $(`<div id="html_94837180233980fb946dac6b5cf79ac5" style="width: 100.0%; height: 100.0%;">☕ Winners Snacks (571 m)</div>`)[0];
+                popup_49ca4b273a437c85b59a527bafc4cb9a.setContent(html_94837180233980fb946dac6b5cf79ac5);
+            
+        
+
+        marker_ab1108fad0eec2302a66fe73a91f55b4.bindPopup(popup_49ca4b273a437c85b59a527bafc4cb9a)
+        ;
+
+        
+    
+    
+                marker_ab1108fad0eec2302a66fe73a91f55b4.setIcon(icon_b16590908dfdebbc0acf851f141f12c1);
+            
+    
+            var marker_f98df64812bb1f6e9088ac0a07d309d1 = L.marker(
+                [13.0822249, 80.2779874],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_5fd7e7d78921258746f53c8775ac3238 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75bd92ba0d2fa38175d66e4fed6b1459 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc2515623746a11270503711425294c9 = $(`<div id="html_cc2515623746a11270503711425294c9" style="width: 100.0%; height: 100.0%;">☕ Irfan Snack Bar (619 m)</div>`)[0];
+                popup_75bd92ba0d2fa38175d66e4fed6b1459.setContent(html_cc2515623746a11270503711425294c9);
+            
+        
+
+        marker_f98df64812bb1f6e9088ac0a07d309d1.bindPopup(popup_75bd92ba0d2fa38175d66e4fed6b1459)
+        ;
+
+        
+    
+    
+                marker_f98df64812bb1f6e9088ac0a07d309d1.setIcon(icon_5fd7e7d78921258746f53c8775ac3238);
+            
+    
+            var marker_1b19c70c43051490761c8d3af6245408 = L.marker(
+                [13.0922909, 80.2825072],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_ecec0854a8b62e553c91f02d3997f2d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9671f9e3f0e0993f533189519dac9722 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d84e7b228edb59e207d1691bdc8e4b6 = $(`<div id="html_7d84e7b228edb59e207d1691bdc8e4b6" style="width: 100.0%; height: 100.0%;">☕ Everest Coffee (660 m)</div>`)[0];
+                popup_9671f9e3f0e0993f533189519dac9722.setContent(html_7d84e7b228edb59e207d1691bdc8e4b6);
+            
+        
+
+        marker_1b19c70c43051490761c8d3af6245408.bindPopup(popup_9671f9e3f0e0993f533189519dac9722)
+        ;
+
+        
+    
+    
+                marker_1b19c70c43051490761c8d3af6245408.setIcon(icon_ecec0854a8b62e553c91f02d3997f2d7);
+            
+    
+            var marker_72b2a3c8662a00ce5b9525cfb014f783 = L.marker(
+                [13.0927005, 80.2826617],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_97bacc90ef3f347cf3650cc63e92e2ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a19c26dade30097e2819e3e24a21da59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8997e1279f45e4488224bcf1d8c8522b = $(`<div id="html_8997e1279f45e4488224bcf1d8c8522b" style="width: 100.0%; height: 100.0%;">☕ Sri Vinodkumar Tea & Coffee Center (705 m)</div>`)[0];
+                popup_a19c26dade30097e2819e3e24a21da59.setContent(html_8997e1279f45e4488224bcf1d8c8522b);
+            
+        
+
+        marker_72b2a3c8662a00ce5b9525cfb014f783.bindPopup(popup_a19c26dade30097e2819e3e24a21da59)
+        ;
+
+        
+    
+    
+                marker_72b2a3c8662a00ce5b9525cfb014f783.setIcon(icon_97bacc90ef3f347cf3650cc63e92e2ee);
+            
+    
+            var marker_1ff58a67168eaedabacc77e8e2d8bc1e = L.marker(
+                [13.0907195, 80.2843765],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_600fdc688d2487bb98175058ea6f63da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad709f34f98a7db66d5135a9c57f28be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54871a337b2229600e4d1961de4d647a = $(`<div id="html_54871a337b2229600e4d1961de4d647a" style="width: 100.0%; height: 100.0%;">☕ Praba Cool Bar (714 m)</div>`)[0];
+                popup_ad709f34f98a7db66d5135a9c57f28be.setContent(html_54871a337b2229600e4d1961de4d647a);
+            
+        
+
+        marker_1ff58a67168eaedabacc77e8e2d8bc1e.bindPopup(popup_ad709f34f98a7db66d5135a9c57f28be)
+        ;
+
+        
+    
+    
+                marker_1ff58a67168eaedabacc77e8e2d8bc1e.setIcon(icon_600fdc688d2487bb98175058ea6f63da);
+            
+    
+            var marker_6d5829e1f350fe289a145365588e35e7 = L.marker(
+                [13.0941723, 80.2796696],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_37e97472c1f4e8cc654a27edfde7b63a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_282dfd3ce706366e80e037e52d65fd40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_848339b6534a425b7ac4b7a0994e685b = $(`<div id="html_848339b6534a425b7ac4b7a0994e685b" style="width: 100.0%; height: 100.0%;">☕ Assam Tea House (716 m)</div>`)[0];
+                popup_282dfd3ce706366e80e037e52d65fd40.setContent(html_848339b6534a425b7ac4b7a0994e685b);
+            
+        
+
+        marker_6d5829e1f350fe289a145365588e35e7.bindPopup(popup_282dfd3ce706366e80e037e52d65fd40)
+        ;
+
+        
+    
+    
+                marker_6d5829e1f350fe289a145365588e35e7.setIcon(icon_37e97472c1f4e8cc654a27edfde7b63a);
+            
+    
+            var marker_0e16ead285464a4461100cafa29fee9e = L.marker(
+                [13.0897314, 80.2848828],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_7b4440257ca51ba7a8f2e1b956ba0a5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2439ae65f32a72a8a969ea409e861605 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bbaa3a109cebcb00c8d040779ab35cc = $(`<div id="html_4bbaa3a109cebcb00c8d040779ab35cc" style="width: 100.0%; height: 100.0%;">☕ Myson (724 m)</div>`)[0];
+                popup_2439ae65f32a72a8a969ea409e861605.setContent(html_4bbaa3a109cebcb00c8d040779ab35cc);
+            
+        
+
+        marker_0e16ead285464a4461100cafa29fee9e.bindPopup(popup_2439ae65f32a72a8a969ea409e861605)
+        ;
+
+        
+    
+    
+                marker_0e16ead285464a4461100cafa29fee9e.setIcon(icon_7b4440257ca51ba7a8f2e1b956ba0a5d);
+            
+    
+            var marker_69e6954a099409243c7b75cedb67de7e = L.marker(
+                [13.0942816, 80.2819967],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_1573189dac25a6ecf13c692626721a11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b1c5e377ca78471f84fa68f8fd8a659 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fa6233799026e38a9c96c00832c91eb = $(`<div id="html_9fa6233799026e38a9c96c00832c91eb" style="width: 100.0%; height: 100.0%;">☕ Regal Snack Bar (811 m)</div>`)[0];
+                popup_0b1c5e377ca78471f84fa68f8fd8a659.setContent(html_9fa6233799026e38a9c96c00832c91eb);
+            
+        
+
+        marker_69e6954a099409243c7b75cedb67de7e.bindPopup(popup_0b1c5e377ca78471f84fa68f8fd8a659)
+        ;
+
+        
+    
+    
+                marker_69e6954a099409243c7b75cedb67de7e.setIcon(icon_1573189dac25a6ecf13c692626721a11);
+            
+    
+            var marker_d46065f4a9e622f5a5a1070c03e3bd7f = L.marker(
+                [13.0950966, 80.2798853],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_e5cc133e0f83743863e7dedeaa28495c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53347ae32fbd30149a94b11dafc7e7ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b16b42976daa8938456620cf75ddb42c = $(`<div id="html_b16b42976daa8938456620cf75ddb42c" style="width: 100.0%; height: 100.0%;">☕ Gupta Pan House (821 m)</div>`)[0];
+                popup_53347ae32fbd30149a94b11dafc7e7ae.setContent(html_b16b42976daa8938456620cf75ddb42c);
+            
+        
+
+        marker_d46065f4a9e622f5a5a1070c03e3bd7f.bindPopup(popup_53347ae32fbd30149a94b11dafc7e7ae)
+        ;
+
+        
+    
+    
+                marker_d46065f4a9e622f5a5a1070c03e3bd7f.setIcon(icon_e5cc133e0f83743863e7dedeaa28495c);
+            
+    
+            var marker_28faebe6bb5b3ff121519b1b86e0c2f5 = L.marker(
+                [13.0942797, 80.282896],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_c3ce067edd7be8a3ad0471db11aadb31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9570749ff2ecc3a030577a914c8f9c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07b70278d0617c480eb3bff409eb1bfb = $(`<div id="html_07b70278d0617c480eb3bff409eb1bfb" style="width: 100.0%; height: 100.0%;">☕ Tea Stall (860 m)</div>`)[0];
+                popup_d9570749ff2ecc3a030577a914c8f9c6.setContent(html_07b70278d0617c480eb3bff409eb1bfb);
+            
+        
+
+        marker_28faebe6bb5b3ff121519b1b86e0c2f5.bindPopup(popup_d9570749ff2ecc3a030577a914c8f9c6)
+        ;
+
+        
+    
+    
+                marker_28faebe6bb5b3ff121519b1b86e0c2f5.setIcon(icon_c3ce067edd7be8a3ad0471db11aadb31);
+            
+    
+            var marker_e2d811901b695ea4153fbd2dc229836e = L.marker(
+                [13.0955906, 80.2797992],
+                {
+}
+            ).addTo(map_f29a43a30a7f846bcca43e95b8cc029e);
+        
+    
+            var icon_804c4e469e2ae8d986b044819ebcc849 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_661b9b6ff0e01b7bbc250d3d1373ea1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f265d4357949e16a074508b320f6213 = $(`<div id="html_2f265d4357949e16a074508b320f6213" style="width: 100.0%; height: 100.0%;">☕ Murugan Sandwich & Juice (873 m)</div>`)[0];
+                popup_661b9b6ff0e01b7bbc250d3d1373ea1d.setContent(html_2f265d4357949e16a074508b320f6213);
+            
+        
+
+        marker_e2d811901b695ea4153fbd2dc229836e.bindPopup(popup_661b9b6ff0e01b7bbc250d3d1373ea1d)
+        ;
+
+        
+    
+    
+                marker_e2d811901b695ea4153fbd2dc229836e.setIcon(icon_804c4e469e2ae8d986b044819ebcc849);
+            
+</script>
+</html>

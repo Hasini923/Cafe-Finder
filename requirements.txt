@@ -1,0 +1,5 @@
+streamlit==1.50.0
+geopy==2.4.1
+geocoder==1.38.1
+folium==0.20.0
+requests==2.32.5
